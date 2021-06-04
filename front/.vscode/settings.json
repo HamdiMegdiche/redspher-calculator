@@ -1,0 +1,39 @@
+{
+  "typescript.validate.enable": false,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    // "source.fixAll.eslint": true
+  },
+  // recommended extensions for this project
+  "recommendations": [
+    "auto-rename-tag",
+    "bracket-pair-colorizer",
+    "code-settings-sync",
+    "console-log",
+    "debugger-for-chrome",
+    "dotenv",
+    "es7-react-js-snippets",
+    "githistory",
+    "gitlens",
+    "highlight-matching-tag",
+    "html-css-class-completion",
+    "JavaScriptSnippets",
+    "markdown-all-in-one",
+    "markdown-preview-enhanced",
+    "material-icon-theme",
+    "path-intellisense",
+    "prettier-vscode",
+    "theme-atom-one-dark",
+    "turbo-console-log",
+    "velocity",
+    "vsc-community-material-theme",
+    "vsc-material-theme",
+    "vsc-material-theme-icons",
+    "vscode-docker",
+    "vscode-eslint",
+    "vscode-icons",
+    "vscode-remote-extensionpack",
+    "vscode-styled-components",
+    "vscode-todo-highlight"
+  ]
+}
