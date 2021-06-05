@@ -1,10 +1,15 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-// Student store state
+interface operation {
+  value: string; // string to send to API
+  computed: string; // computed value from API
+}
+// Calculator store state
 interface calculatorState {
-  operations: Array<string>;
+  operations: Array<operation>;
   errors: string;
 }
+
 // Initial state
 const initialState: calculatorState = {
   operations: [],
@@ -15,6 +20,13 @@ const calculatorSlice = createSlice({
   name: "calculator",
   initialState,
   reducers: {
+    addOperation(state, { payload }: PayloadAction<operation>) {
+      // Add latest operations to the beginning
+      state.operations.unshift(payload);
+    },
+    clearOperations(state) {
+      state.operations = [];
+    },
     // Set errors : used for potential errors from the API
     setErrors(state, { payload }: PayloadAction<string>) {
       state.errors = payload;

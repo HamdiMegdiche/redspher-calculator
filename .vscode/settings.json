@@ -1,9 +1,6 @@
 {
-  "typescript.validate.enable": false,
   "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": {
-    // "source.fixAll.eslint": true
-  },
+  "typescript.validate.enable": false,
   // recommended extensions for this project
   "recommendations": [
     "auto-rename-tag",
