@@ -1,15 +1,17 @@
 import { useEffect, useState } from "react";
 import styled from "styled-components";
-import { useAppDispatch, useAppSelector } from "redux/hooks";
+import { useAppDispatch, useAppSelector } from "hooks";
 import { hasOperations } from "helpers";
-import { Button } from "components";
-import { actions } from "redux/reducers/calculator";
 import { computeString } from "services";
+import { actions } from "redux/reducers/calculator";
+import { Button } from "components";
 
 export default function App() {
   const dispatch = useAppDispatch();
-  const [operation, setOperation] = useState("");
+  const [currentOperation, setCurrentOperation] = useState("");
   const [previousOperationText, setPreviousOperationText] = useState<string | null>(null);
+  const [showOperations, setShowOperations] = useState(false);
+  const [error, setError] = useState("");
   // Operations list selector from redux store
   const operations = useAppSelector(state => state.calculator.operations);
   const buttons = ["/", "1", "2", "3", "*", "4", "5", "6", "+", "7", "8", "9", "-", ".", "0"];
@@ -20,10 +22,11 @@ export default function App() {
     return () => {
       window.removeEventListener("keydown", handleEventKeyDownCallback);
     };
-  }, [operation]);
+  }, [currentOperation]);
 
   function clear() {
-    setOperation("");
+    setCurrentOperation("");
+    setError("");
     setPreviousOperationText(null);
     dispatch(actions.clearOperations());
   }
@@ -35,34 +38,55 @@ export default function App() {
 
     if (["Delete", "Backspace"].includes(e.key)) handleDelete();
     else if (["=", "Enter"].includes(e.key)) await compute();
-    else setOperation(v => (v += e.key));
+    else setCurrentOperation(v => (v += e.key));
   }
 
   function handleDelete() {
-    if (!operation.length) return;
-    const newValue = operation.substring(0, operation.length - 1);
-    setOperation(newValue);
+    if (!currentOperation.length) return;
+    const newValue = currentOperation.substring(0, currentOperation.length - 1);
+    setCurrentOperation(newValue);
   }
 
   async function compute() {
-    if (!operation.length || !hasOperations(operation)) return;
+    if (!currentOperation.length || !hasOperations(currentOperation)) return;
+    setError("");
 
-    const [response, error] = await computeString(operation);
-    if (error) {
-      console.error(error);
+    const [res, err] = await computeString(currentOperation);
+    if (err) {
+      setError(err.error);
       return;
     }
-    dispatch(actions.addOperation({ value: operation, computed: response! }));
-    setPreviousOperationText(`${operation}=${response}`);
-    setOperation("");
+    const computed = res?.computed;
+    dispatch(actions.addOperation({ value: currentOperation, computed: computed! }));
+
+    // smooth scroll to top (show recent operation)
+    const historyDiv = document.getElementById("history");
+    historyDiv?.scrollIntoView({ behavior: "smooth", block: "start" });
+    setPreviousOperationText(`${currentOperation}=${computed}`);
+    setCurrentOperation("");
   }
 
   return (
     <Wrapper>
       <Container>
+        {showOperations /*&& !!operations.length*/ && (
+          <History id="history" data-testid="history-operations" title="Operations history">
+            {operations.map((op, index) => (
+              <div key={"op-" + index}>{`${op.value}=${op.computed}`}</div>
+            ))}
+          </History>
+        )}
         <Output>
+          <IconHistory
+            data-testid="history-icon"
+            title={`${showOperations ? "Hide" : "Show"} history`}
+            onClick={() => setShowOperations(show => !show)}>
+            ⎌
+          </IconHistory>
           <Previous data-testid="previous-operation">{previousOperationText ?? "ANS"}</Previous>
-          <Current data-testid="current-operation">{operation.length ? operation : 0}</Current>
+          <Current data-testid="current-operation">
+            {currentOperation.length ? currentOperation : 0}
+          </Current>
         </Output>
         <ButtonStyled span="2" label="AC" backgroundColor="#dadce0" onClick={clear} />
         <ButtonStyled label="DEL" backgroundColor="#dadce0" onClick={handleDelete} />
@@ -72,7 +96,7 @@ export default function App() {
             key={`${b}-${index}`}
             label={b}
             backgroundColor={hasOperations(b) ? "#dadce0" : "#f1f3f4"}
-            onClick={() => setOperation(v => (v += b))}
+            onClick={() => setCurrentOperation(v => (v += b))}
           />
         ))}
 
@@ -84,6 +108,7 @@ export default function App() {
           onClick={compute}
         />
       </Container>
+      <Error>{error}</Error>
     </Wrapper>
   );
 }
@@ -100,15 +125,45 @@ const Wrapper = styled.div`
 const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 85px);
-  grid-template-rows: repeat(7, 40px);
+  grid-template-rows: repeat(11, 40px);
   gap: 2px;
 `;
 
-const Output = styled.div`
+const History = styled.div`
   border: 1px grey solid;
   border-radius: 10px;
   margin: 4px;
-  grid-column: span 4;
+  grid-row: span 4;
+  font-family: monospace;
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 8px;
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow: auto;
+`;
+
+const IconHistory = styled.div`
+  position: absolute;
+  top: 0;
+  left: 8px;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 800;
+
+  :hover {
+    opacity: 0.8;
+  }
+`;
+
+const Output = styled.div`
+  position: relative;
+  border: 1px grey solid;
+  border-radius: 10px;
+  margin: 4px;
   grid-row: span 2;
   font-family: monospace;
   grid-column: 1 / -1;
@@ -134,4 +189,9 @@ const ButtonStyled = styled(Button)`
   outline: none;
   border-radius: 4px;
   margin: 4px;
+`;
+
+const Error = styled.div`
+  color: #ff0101;
+  font-size: 16px;
 `;

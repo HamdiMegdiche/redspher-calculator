@@ -26,10 +26,6 @@ const calculatorSlice = createSlice({
     },
     clearOperations(state) {
       state.operations = [];
-    },
-    // Set errors : used for potential errors from the API
-    setErrors(state, { payload }: PayloadAction<string>) {
-      state.errors = payload;
     }
   }
 });

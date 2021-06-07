@@ -2,7 +2,7 @@
   "name": "redspher-front",
   "version": "1.0.0",
   "author": "Hamdi Megdiche",
-  "license": "ISC",
+  "license": "MIT",
   "description": "Redspher project test calculator - front",
   "scripts": {
     "start": "react-scripts start",
@@ -38,6 +38,7 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^6.0.0",
     "prettier": "^2.3.0",
     "react-scripts": "4.0.3"
   },
@@ -58,5 +59,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run format"
+    }
   }
 }

@@ -6,26 +6,33 @@ exports[`Checks Previous & Current operations correctly changes after compute AP
     class="sc-gtsrHT dfpLLh"
   >
     <div
-      class="sc-dlnjwi iChkeo"
+      class="sc-dlnjwi iSuClT"
     >
       <div
-        class="sc-hKFxyN fBuZAB"
+        class="sc-jSFjdj hxnBlO"
       >
+        <div
+          class="sc-eCApnc dXrzPs"
+          data-testid="history-icon"
+          title="Show history"
+        >
+          ⎌
+        </div>
         <span
-          class="sc-eCApnc bHRJIF"
+          class="sc-gKAaRy hacYTM"
           data-testid="previous-operation"
         >
           ANS
         </span>
         <span
-          class="sc-jSFjdj bVZAPG"
+          class="sc-iCoGMd fnuvty"
           data-testid="current-operation"
         >
           0
         </span>
       </div>
       <button
-        class="sc-bdnxRM rpSRV sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM rpSRV sc-fujyAs gdlikn"
         color="black"
         label="AC"
         span="2"
@@ -33,119 +40,119 @@ exports[`Checks Previous & Current operations correctly changes after compute AP
         AC
       </button>
       <button
-        class="sc-bdnxRM cOanBT sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM cOanBT sc-fujyAs gdlikn"
         color="black"
         label="DEL"
       >
         DEL
       </button>
       <button
-        class="sc-bdnxRM cOanBT sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM cOanBT sc-fujyAs gdlikn"
         color="black"
         label="/"
       >
         /
       </button>
       <button
-        class="sc-bdnxRM joDfND sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
         color="black"
         label="1"
       >
         1
       </button>
       <button
-        class="sc-bdnxRM joDfND sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
         color="black"
         label="2"
       >
         2
       </button>
       <button
-        class="sc-bdnxRM joDfND sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
         color="black"
         label="3"
       >
         3
       </button>
       <button
-        class="sc-bdnxRM cOanBT sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM cOanBT sc-fujyAs gdlikn"
         color="black"
         label="*"
       >
         *
       </button>
       <button
-        class="sc-bdnxRM joDfND sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
         color="black"
         label="4"
       >
         4
       </button>
       <button
-        class="sc-bdnxRM joDfND sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
         color="black"
         label="5"
       >
         5
       </button>
       <button
-        class="sc-bdnxRM joDfND sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
         color="black"
         label="6"
       >
         6
       </button>
       <button
-        class="sc-bdnxRM cOanBT sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM cOanBT sc-fujyAs gdlikn"
         color="black"
         label="+"
       >
         +
       </button>
       <button
-        class="sc-bdnxRM joDfND sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
         color="black"
         label="7"
       >
         7
       </button>
       <button
-        class="sc-bdnxRM joDfND sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
         color="black"
         label="8"
       >
         8
       </button>
       <button
-        class="sc-bdnxRM joDfND sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
         color="black"
         label="9"
       >
         9
       </button>
       <button
-        class="sc-bdnxRM cOanBT sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM cOanBT sc-fujyAs gdlikn"
         color="black"
         label="-"
       >
         -
       </button>
       <button
-        class="sc-bdnxRM joDfND sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
         color="black"
         label="."
       >
         .
       </button>
       <button
-        class="sc-bdnxRM joDfND sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
         color="black"
         label="0"
       >
         0
       </button>
       <button
-        class="sc-bdnxRM eJuZHN sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM eJuZHN sc-fujyAs gdlikn"
         color="white"
         label="="
         span="2"
@@ -153,6 +160,9 @@ exports[`Checks Previous & Current operations correctly changes after compute AP
         =
       </button>
     </div>
+    <div
+      class="sc-pNWdM blrIog"
+    />
   </div>
 </DocumentFragment>
 `;
@@ -163,26 +173,33 @@ exports[`Current operation correctly changes after Clear 1`] = `
     class="sc-gtsrHT dfpLLh"
   >
     <div
-      class="sc-dlnjwi iChkeo"
+      class="sc-dlnjwi iSuClT"
     >
       <div
-        class="sc-hKFxyN fBuZAB"
+        class="sc-jSFjdj hxnBlO"
       >
+        <div
+          class="sc-eCApnc dXrzPs"
+          data-testid="history-icon"
+          title="Show history"
+        >
+          ⎌
+        </div>
         <span
-          class="sc-eCApnc bHRJIF"
+          class="sc-gKAaRy hacYTM"
           data-testid="previous-operation"
         >
           ANS
         </span>
         <span
-          class="sc-jSFjdj bVZAPG"
+          class="sc-iCoGMd fnuvty"
           data-testid="current-operation"
         >
           0
         </span>
       </div>
       <button
-        class="sc-bdnxRM rpSRV sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM rpSRV sc-fujyAs gdlikn"
         color="black"
         label="AC"
         span="2"
@@ -190,119 +207,119 @@ exports[`Current operation correctly changes after Clear 1`] = `
         AC
       </button>
       <button
-        class="sc-bdnxRM cOanBT sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM cOanBT sc-fujyAs gdlikn"
         color="black"
         label="DEL"
       >
         DEL
       </button>
       <button
-        class="sc-bdnxRM cOanBT sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM cOanBT sc-fujyAs gdlikn"
         color="black"
         label="/"
       >
         /
       </button>
       <button
-        class="sc-bdnxRM joDfND sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
         color="black"
         label="1"
       >
         1
       </button>
       <button
-        class="sc-bdnxRM joDfND sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
         color="black"
         label="2"
       >
         2
       </button>
       <button
-        class="sc-bdnxRM joDfND sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
         color="black"
         label="3"
       >
         3
       </button>
       <button
-        class="sc-bdnxRM cOanBT sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM cOanBT sc-fujyAs gdlikn"
         color="black"
         label="*"
       >
         *
       </button>
       <button
-        class="sc-bdnxRM joDfND sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
         color="black"
         label="4"
       >
         4
       </button>
       <button
-        class="sc-bdnxRM joDfND sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
         color="black"
         label="5"
       >
         5
       </button>
       <button
-        class="sc-bdnxRM joDfND sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
         color="black"
         label="6"
       >
         6
       </button>
       <button
-        class="sc-bdnxRM cOanBT sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM cOanBT sc-fujyAs gdlikn"
         color="black"
         label="+"
       >
         +
       </button>
       <button
-        class="sc-bdnxRM joDfND sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
         color="black"
         label="7"
       >
         7
       </button>
       <button
-        class="sc-bdnxRM joDfND sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
         color="black"
         label="8"
       >
         8
       </button>
       <button
-        class="sc-bdnxRM joDfND sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
         color="black"
         label="9"
       >
         9
       </button>
       <button
-        class="sc-bdnxRM cOanBT sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM cOanBT sc-fujyAs gdlikn"
         color="black"
         label="-"
       >
         -
       </button>
       <button
-        class="sc-bdnxRM joDfND sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
         color="black"
         label="."
       >
         .
       </button>
       <button
-        class="sc-bdnxRM joDfND sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
         color="black"
         label="0"
       >
         0
       </button>
       <button
-        class="sc-bdnxRM eJuZHN sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM eJuZHN sc-fujyAs gdlikn"
         color="white"
         label="="
         span="2"
@@ -310,6 +327,9 @@ exports[`Current operation correctly changes after Clear 1`] = `
         =
       </button>
     </div>
+    <div
+      class="sc-pNWdM blrIog"
+    />
   </div>
 </DocumentFragment>
 `;
@@ -320,26 +340,33 @@ exports[`Current operation correctly changes after click 1`] = `
     class="sc-gtsrHT dfpLLh"
   >
     <div
-      class="sc-dlnjwi iChkeo"
+      class="sc-dlnjwi iSuClT"
     >
       <div
-        class="sc-hKFxyN fBuZAB"
+        class="sc-jSFjdj hxnBlO"
       >
+        <div
+          class="sc-eCApnc dXrzPs"
+          data-testid="history-icon"
+          title="Show history"
+        >
+          ⎌
+        </div>
         <span
-          class="sc-eCApnc bHRJIF"
+          class="sc-gKAaRy hacYTM"
           data-testid="previous-operation"
         >
           ANS
         </span>
         <span
-          class="sc-jSFjdj bVZAPG"
+          class="sc-iCoGMd fnuvty"
           data-testid="current-operation"
         >
           0
         </span>
       </div>
       <button
-        class="sc-bdnxRM rpSRV sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM rpSRV sc-fujyAs gdlikn"
         color="black"
         label="AC"
         span="2"
@@ -347,119 +374,119 @@ exports[`Current operation correctly changes after click 1`] = `
         AC
       </button>
       <button
-        class="sc-bdnxRM cOanBT sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM cOanBT sc-fujyAs gdlikn"
         color="black"
         label="DEL"
       >
         DEL
       </button>
       <button
-        class="sc-bdnxRM cOanBT sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM cOanBT sc-fujyAs gdlikn"
         color="black"
         label="/"
       >
         /
       </button>
       <button
-        class="sc-bdnxRM joDfND sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
         color="black"
         label="1"
       >
         1
       </button>
       <button
-        class="sc-bdnxRM joDfND sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
         color="black"
         label="2"
       >
         2
       </button>
       <button
-        class="sc-bdnxRM joDfND sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
         color="black"
         label="3"
       >
         3
       </button>
       <button
-        class="sc-bdnxRM cOanBT sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM cOanBT sc-fujyAs gdlikn"
         color="black"
         label="*"
       >
         *
       </button>
       <button
-        class="sc-bdnxRM joDfND sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
         color="black"
         label="4"
       >
         4
       </button>
       <button
-        class="sc-bdnxRM joDfND sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
         color="black"
         label="5"
       >
         5
       </button>
       <button
-        class="sc-bdnxRM joDfND sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
         color="black"
         label="6"
       >
         6
       </button>
       <button
-        class="sc-bdnxRM cOanBT sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM cOanBT sc-fujyAs gdlikn"
         color="black"
         label="+"
       >
         +
       </button>
       <button
-        class="sc-bdnxRM joDfND sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
         color="black"
         label="7"
       >
         7
       </button>
       <button
-        class="sc-bdnxRM joDfND sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
         color="black"
         label="8"
       >
         8
       </button>
       <button
-        class="sc-bdnxRM joDfND sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
         color="black"
         label="9"
       >
         9
       </button>
       <button
-        class="sc-bdnxRM cOanBT sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM cOanBT sc-fujyAs gdlikn"
         color="black"
         label="-"
       >
         -
       </button>
       <button
-        class="sc-bdnxRM joDfND sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
         color="black"
         label="."
       >
         .
       </button>
       <button
-        class="sc-bdnxRM joDfND sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
         color="black"
         label="0"
       >
         0
       </button>
       <button
-        class="sc-bdnxRM eJuZHN sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM eJuZHN sc-fujyAs gdlikn"
         color="white"
         label="="
         span="2"
@@ -467,6 +494,9 @@ exports[`Current operation correctly changes after click 1`] = `
         =
       </button>
     </div>
+    <div
+      class="sc-pNWdM blrIog"
+    />
   </div>
 </DocumentFragment>
 `;
@@ -477,26 +507,33 @@ exports[`Current operation correctly changes after keydown 1`] = `
     class="sc-gtsrHT dfpLLh"
   >
     <div
-      class="sc-dlnjwi iChkeo"
+      class="sc-dlnjwi iSuClT"
     >
       <div
-        class="sc-hKFxyN fBuZAB"
+        class="sc-jSFjdj hxnBlO"
       >
+        <div
+          class="sc-eCApnc dXrzPs"
+          data-testid="history-icon"
+          title="Show history"
+        >
+          ⎌
+        </div>
         <span
-          class="sc-eCApnc bHRJIF"
+          class="sc-gKAaRy hacYTM"
           data-testid="previous-operation"
         >
           ANS
         </span>
         <span
-          class="sc-jSFjdj bVZAPG"
+          class="sc-iCoGMd fnuvty"
           data-testid="current-operation"
         >
           0
         </span>
       </div>
       <button
-        class="sc-bdnxRM rpSRV sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM rpSRV sc-fujyAs gdlikn"
         color="black"
         label="AC"
         span="2"
@@ -504,119 +541,119 @@ exports[`Current operation correctly changes after keydown 1`] = `
         AC
       </button>
       <button
-        class="sc-bdnxRM cOanBT sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM cOanBT sc-fujyAs gdlikn"
         color="black"
         label="DEL"
       >
         DEL
       </button>
       <button
-        class="sc-bdnxRM cOanBT sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM cOanBT sc-fujyAs gdlikn"
         color="black"
         label="/"
       >
         /
       </button>
       <button
-        class="sc-bdnxRM joDfND sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
         color="black"
         label="1"
       >
         1
       </button>
       <button
-        class="sc-bdnxRM joDfND sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
         color="black"
         label="2"
       >
         2
       </button>
       <button
-        class="sc-bdnxRM joDfND sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
         color="black"
         label="3"
       >
         3
       </button>
       <button
-        class="sc-bdnxRM cOanBT sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM cOanBT sc-fujyAs gdlikn"
         color="black"
         label="*"
       >
         *
       </button>
       <button
-        class="sc-bdnxRM joDfND sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
         color="black"
         label="4"
       >
         4
       </button>
       <button
-        class="sc-bdnxRM joDfND sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
         color="black"
         label="5"
       >
         5
       </button>
       <button
-        class="sc-bdnxRM joDfND sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
         color="black"
         label="6"
       >
         6
       </button>
       <button
-        class="sc-bdnxRM cOanBT sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM cOanBT sc-fujyAs gdlikn"
         color="black"
         label="+"
       >
         +
       </button>
       <button
-        class="sc-bdnxRM joDfND sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
         color="black"
         label="7"
       >
         7
       </button>
       <button
-        class="sc-bdnxRM joDfND sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
         color="black"
         label="8"
       >
         8
       </button>
       <button
-        class="sc-bdnxRM joDfND sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
         color="black"
         label="9"
       >
         9
       </button>
       <button
-        class="sc-bdnxRM cOanBT sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM cOanBT sc-fujyAs gdlikn"
         color="black"
         label="-"
       >
         -
       </button>
       <button
-        class="sc-bdnxRM joDfND sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
         color="black"
         label="."
       >
         .
       </button>
       <button
-        class="sc-bdnxRM joDfND sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
         color="black"
         label="0"
       >
         0
       </button>
       <button
-        class="sc-bdnxRM eJuZHN sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM eJuZHN sc-fujyAs gdlikn"
         color="white"
         label="="
         span="2"
@@ -624,6 +661,176 @@ exports[`Current operation correctly changes after keydown 1`] = `
         =
       </button>
     </div>
+    <div
+      class="sc-pNWdM blrIog"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Displays history perperly 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-gtsrHT dfpLLh"
+  >
+    <div
+      class="sc-dlnjwi iSuClT"
+    >
+      <div
+        class="sc-jSFjdj hxnBlO"
+      >
+        <div
+          class="sc-eCApnc dXrzPs"
+          data-testid="history-icon"
+          title="Show history"
+        >
+          ⎌
+        </div>
+        <span
+          class="sc-gKAaRy hacYTM"
+          data-testid="previous-operation"
+        >
+          ANS
+        </span>
+        <span
+          class="sc-iCoGMd fnuvty"
+          data-testid="current-operation"
+        >
+          0
+        </span>
+      </div>
+      <button
+        class="sc-bdnxRM rpSRV sc-fujyAs gdlikn"
+        color="black"
+        label="AC"
+        span="2"
+      >
+        AC
+      </button>
+      <button
+        class="sc-bdnxRM cOanBT sc-fujyAs gdlikn"
+        color="black"
+        label="DEL"
+      >
+        DEL
+      </button>
+      <button
+        class="sc-bdnxRM cOanBT sc-fujyAs gdlikn"
+        color="black"
+        label="/"
+      >
+        /
+      </button>
+      <button
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
+        color="black"
+        label="1"
+      >
+        1
+      </button>
+      <button
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
+        color="black"
+        label="2"
+      >
+        2
+      </button>
+      <button
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
+        color="black"
+        label="3"
+      >
+        3
+      </button>
+      <button
+        class="sc-bdnxRM cOanBT sc-fujyAs gdlikn"
+        color="black"
+        label="*"
+      >
+        *
+      </button>
+      <button
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
+        color="black"
+        label="4"
+      >
+        4
+      </button>
+      <button
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
+        color="black"
+        label="5"
+      >
+        5
+      </button>
+      <button
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
+        color="black"
+        label="6"
+      >
+        6
+      </button>
+      <button
+        class="sc-bdnxRM cOanBT sc-fujyAs gdlikn"
+        color="black"
+        label="+"
+      >
+        +
+      </button>
+      <button
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
+        color="black"
+        label="7"
+      >
+        7
+      </button>
+      <button
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
+        color="black"
+        label="8"
+      >
+        8
+      </button>
+      <button
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
+        color="black"
+        label="9"
+      >
+        9
+      </button>
+      <button
+        class="sc-bdnxRM cOanBT sc-fujyAs gdlikn"
+        color="black"
+        label="-"
+      >
+        -
+      </button>
+      <button
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
+        color="black"
+        label="."
+      >
+        .
+      </button>
+      <button
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
+        color="black"
+        label="0"
+      >
+        0
+      </button>
+      <button
+        class="sc-bdnxRM eJuZHN sc-fujyAs gdlikn"
+        color="white"
+        label="="
+        span="2"
+      >
+        =
+      </button>
+    </div>
+    <div
+      class="sc-pNWdM blrIog"
+    />
   </div>
 </DocumentFragment>
 `;
@@ -634,26 +841,33 @@ exports[`Renders properly 1`] = `
     class="sc-gtsrHT dfpLLh"
   >
     <div
-      class="sc-dlnjwi iChkeo"
+      class="sc-dlnjwi iSuClT"
     >
       <div
-        class="sc-hKFxyN fBuZAB"
+        class="sc-jSFjdj hxnBlO"
       >
+        <div
+          class="sc-eCApnc dXrzPs"
+          data-testid="history-icon"
+          title="Show history"
+        >
+          ⎌
+        </div>
         <span
-          class="sc-eCApnc bHRJIF"
+          class="sc-gKAaRy hacYTM"
           data-testid="previous-operation"
         >
           ANS
         </span>
         <span
-          class="sc-jSFjdj bVZAPG"
+          class="sc-iCoGMd fnuvty"
           data-testid="current-operation"
         >
           0
         </span>
       </div>
       <button
-        class="sc-bdnxRM rpSRV sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM rpSRV sc-fujyAs gdlikn"
         color="black"
         label="AC"
         span="2"
@@ -661,119 +875,119 @@ exports[`Renders properly 1`] = `
         AC
       </button>
       <button
-        class="sc-bdnxRM cOanBT sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM cOanBT sc-fujyAs gdlikn"
         color="black"
         label="DEL"
       >
         DEL
       </button>
       <button
-        class="sc-bdnxRM cOanBT sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM cOanBT sc-fujyAs gdlikn"
         color="black"
         label="/"
       >
         /
       </button>
       <button
-        class="sc-bdnxRM joDfND sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
         color="black"
         label="1"
       >
         1
       </button>
       <button
-        class="sc-bdnxRM joDfND sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
         color="black"
         label="2"
       >
         2
       </button>
       <button
-        class="sc-bdnxRM joDfND sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
         color="black"
         label="3"
       >
         3
       </button>
       <button
-        class="sc-bdnxRM cOanBT sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM cOanBT sc-fujyAs gdlikn"
         color="black"
         label="*"
       >
         *
       </button>
       <button
-        class="sc-bdnxRM joDfND sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
         color="black"
         label="4"
       >
         4
       </button>
       <button
-        class="sc-bdnxRM joDfND sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
         color="black"
         label="5"
       >
         5
       </button>
       <button
-        class="sc-bdnxRM joDfND sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
         color="black"
         label="6"
       >
         6
       </button>
       <button
-        class="sc-bdnxRM cOanBT sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM cOanBT sc-fujyAs gdlikn"
         color="black"
         label="+"
       >
         +
       </button>
       <button
-        class="sc-bdnxRM joDfND sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
         color="black"
         label="7"
       >
         7
       </button>
       <button
-        class="sc-bdnxRM joDfND sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
         color="black"
         label="8"
       >
         8
       </button>
       <button
-        class="sc-bdnxRM joDfND sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
         color="black"
         label="9"
       >
         9
       </button>
       <button
-        class="sc-bdnxRM cOanBT sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM cOanBT sc-fujyAs gdlikn"
         color="black"
         label="-"
       >
         -
       </button>
       <button
-        class="sc-bdnxRM joDfND sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
         color="black"
         label="."
       >
         .
       </button>
       <button
-        class="sc-bdnxRM joDfND sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM joDfND sc-fujyAs gdlikn"
         color="black"
         label="0"
       >
         0
       </button>
       <button
-        class="sc-bdnxRM eJuZHN sc-gKAaRy kbkzzC"
+        class="sc-bdnxRM eJuZHN sc-fujyAs gdlikn"
         color="white"
         label="="
         span="2"
@@ -781,6 +995,9 @@ exports[`Renders properly 1`] = `
         =
       </button>
     </div>
+    <div
+      class="sc-pNWdM blrIog"
+    />
   </div>
 </DocumentFragment>
 `;

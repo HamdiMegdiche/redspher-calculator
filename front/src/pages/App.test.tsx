@@ -50,10 +50,10 @@ it("Current operation correctly changes after keydown", async () => {
   expect(currentOperation.textContent).toEqual("1+2");
 });
 
-it("Current operation correctly changes after Clear", async () => {
+it("Current operation correctly changes after Clear", () => {
   const { asFragment } = renderApp();
   expect(asFragment()).toMatchSnapshot();
-  const buttonAC = await screen.getByText("AC");
+  const buttonAC = screen.getByText("AC");
   fireEvent.keyDown(document, { key: "1" });
   fireEvent.keyDown(document, { key: "+" });
   fireEvent.keyDown(document, { key: "2" });
@@ -64,17 +64,30 @@ it("Current operation correctly changes after Clear", async () => {
   expect(store.getState().calculator.operations).toEqual([]);
 });
 
+it("Displays history perperly", async () => {
+  const { asFragment } = renderApp();
+  expect(asFragment()).toMatchSnapshot();
+  const historyIcon = screen.getByTestId("history-icon");
+  expect(historyIcon).toBeInTheDocument();
+  act(async () => {
+    fireEvent.click(historyIcon);
+    // history operations div is hidden at first (must click on icon)
+    const history = await screen.getByTestId("history-operations");
+    expect(history.textContent).toEqual("");
+  });
+});
+
 it("Checks Previous & Current operations correctly changes after compute API Call", async () => {
   const { asFragment } = renderApp();
-  await mockCompute.mockResolvedValue(["3", null]);
   expect(asFragment()).toMatchSnapshot();
-  fireEvent.keyDown(document, { key: "1" });
-  fireEvent.keyDown(document, { key: "+" });
-  fireEvent.keyDown(document, { key: "2" });
-  const currentOperation = await screen.getByTestId("current-operation");
-  expect(currentOperation.textContent).toEqual("1+2");
   act(async () => {
+    const currentOperation = await screen.getByTestId("current-operation");
+    fireEvent.keyDown(currentOperation, { key: "1" });
+    fireEvent.keyDown(currentOperation, { key: "+" });
+    fireEvent.keyDown(currentOperation, { key: "2" });
+    expect(currentOperation.textContent).toEqual("1+2");
     fireEvent.keyDown(document, { key: "Enter" });
+    await mockCompute.mockResolvedValue(["3", null]);
     const previousOperation = await screen.getByTestId("previous-operation");
     expect(previousOperation.textContent).toEqual("1+2=3");
     expect(currentOperation.textContent).toEqual("0");
