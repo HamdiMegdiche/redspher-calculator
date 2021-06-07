@@ -1,0 +1,45 @@
+version: "3.9"
+
+services:
+  back:
+    restart: always
+    build:
+      context: ./back
+      dockerfile: Dockerfile.dev
+    container_name: redspher-calculator-back
+    # volumes allow sharing of data in run-time between host and container
+    volumes:
+      # don't overwrite this folder in container with the local one
+      - /app/node_modules
+      # map current local directory to the /app inside the container
+      #This is a must for development in order to update our container whenever a change to the source code is made. Without this, you would have to rebuild the image each time you make a change to source code.
+      - ./back:/app
+    ports:
+      - 4001:4001
+    environment:
+      env_file: .env
+    networks:
+      - redspher-calculator-network
+
+  front:
+    restart: always
+    build:
+      context: ./front
+      dockerfile: Dockerfile.dev
+    container_name: redspher-calculator-front
+    volumes:
+      - ./app/node_modules
+      - ./front:/app
+    ports:
+      - 4000:4000
+    # back must run first
+    depends_on:
+      - back
+    environment:
+      env_file: .env
+    networks:
+      - redspher-calculator-network
+
+networks:
+  redspher-calculator-network:
+    driver: bridge

@@ -6,9 +6,9 @@
   "description": "Redspher project test calculator - back",
   "main": "index.ts",
   "scripts": {
-    "start": "ts-node-dev --respawn --pretty --transpile-only src/index.ts",
+    "dev": "ts-node-dev --respawn --pretty --transpile-only src/index.ts",
     "build": "tsc",
-    "test": "jest --watch",
+    "test": "jest --watchAll",
     "lint": "eslint src/**/*.ts",
     "format": "prettier --write \"src/**/*.ts\" "
   },

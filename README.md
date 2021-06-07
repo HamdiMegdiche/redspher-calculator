@@ -9,3 +9,10 @@ React v17 with typescript
 ```
 Express with typescript
 ```
+
+## With Docker (dev)
+Build images docker compose
+(this command builds front & back images and starts them)
+```
+docker compose up
+```

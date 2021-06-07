@@ -1,0 +1,22 @@
+# specify base image from dockerhub
+FROM node:14-alpine3.10
+
+LABEL version="1.0"
+LABEL description="Development image for Redspher calculator API"
+
+# workdir of the container
+# all commands executed are relative to this directory
+WORKDIR /app
+
+COPY ["package.json","package-lock.json*", "./"]
+
+# Install dependencies and clear npm cache
+RUN npm install && npm cache clean --force
+
+COPY . .
+
+# use EXPOSE command to have our port mapped by the docker daemon
+EXPOSE 4001
+
+# default dev command
+CMD [ "npm", "run", "dev" ]

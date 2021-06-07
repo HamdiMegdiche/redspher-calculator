@@ -1,10 +1,29 @@
 # Redspher calculator test project - Front
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) with typescript template.
 
-## Available Scripts
 
-In the project directory `cd front`, you can run: 
+## With docker (dev)
+Build image from parent directory with docker compose
+(this command builds front & back images and starts them)
+```
+cd ..
+docker compose up
+```
+
+Start only back image (run `docker ps` to check front image existence)
+```
+docker start -ai redspher-calculator-front
+```
+
+Run tests
+```
+docker container exec -i  redspher-calculator-front npm test
+```
+
+## Without docker
+
+In the parent project directory `cd front`, you can run: 
 ### `npm start`
 
 Runs the app in the development mode.\
@@ -38,11 +57,6 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
 
 ## License 
 MIT
