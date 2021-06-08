@@ -1,13 +1,21 @@
 # Redspher Calculator
 Test project for Redspher.
 
-## Front
+## `Front: React v17 with typescript`
+### How to run
 ```
-React v17 with typescript
+cd front/
+npm install
+npm start
+npm test // to test
 ```
-## Back
+## `Back: Express with typescript`
+### How to run
 ```
-Express with typescript
+cd back/
+npm install
+npm run dev
+npm test // to test
 ```
 
 ## With Docker (dev)
